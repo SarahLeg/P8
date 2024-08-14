@@ -6,7 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+.header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -17,19 +17,19 @@ body {
 	padding-block: 30px;
 	align-items: center;
 }
-.top-header .name {
+.name {
 	font-size: 26px;
 }
 .nav ul {
 	display: flex;
 	list-style-type: none;
-	font-size: 14px;
 	margin-bottom: 0;
 }
 .nav li {
 	padding-inline: 10px;
 }
 .nav a {
+	font-size: 14px;
 	text-decoration: none;
 	color: #000
 }
@@ -43,7 +43,7 @@ body {
 	padding-block: 100px;
 	position: relative;
 }
-.picture.left::before {
+#about::before {
 	content: ' ';
 	background-color: #E5975F;
 	width: 374px;
@@ -51,16 +51,13 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	z-index: -1;
+	z-index: 0;
 }
 .picture {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
-}
-.picture img {
 	width: 100%;
-
 }
 #about-me {
 	flex: 2
@@ -107,7 +104,6 @@ body {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
 .gallery-item {
 	position: absolute;
@@ -136,7 +132,6 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
 }
 .quote__author {
 	font-family: Spectral;
@@ -197,7 +192,6 @@ body {
 }
 .form-container {
 	flex : 2;
-
 }
 form {
 	display: flex;
@@ -270,12 +264,10 @@ input[type="submit"] {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
-		margin: 2em 0
 	}
 	.service__description{
 		margin-bottom: 1em;
 	}
-
 	#services .container::before{
 		width: 30%;
 		height: 100%;
@@ -284,7 +276,6 @@ input[type="submit"] {
 		left: auto;
 		z-index: 0;
 	}
-
 	#contact .container {
 		flex-direction: column;
 	}
@@ -302,15 +293,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	.header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	.header .nav, .header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	.header .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
