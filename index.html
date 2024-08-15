@@ -16,6 +16,29 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
     <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
+	<!--schéma local business-->
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "LocalBusiness",
+		  "name": "Nina Carducci Photographe",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "123 Rue de la Photographie",
+			"addressLocality": "Bordeaux",
+			"addressRegion": "Aquitaine",
+			"postalCode": "33000",
+			"addressCountry": "FR"
+		  },
+		  "geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 44.8378,
+			"longitude": -0.5792
+		  },
+		  "url": "https://sarahleg.github.io/P8/",
+		  "telephone": "??"
+		}
+	</script>
 	<!--réseaux sociaux-->
 	<meta property="og:title" content="Nina Carducci">
 	<meta property="og:description" content="Photographe sur Bordeaux. Shooting - Retouches - Albums. Saisir un moment, une émotion, une lumière et les rendre immortels, voilà ce qui me fait vibrer.">
@@ -25,6 +48,9 @@
 	<meta name="twitter:title" content="Nina Carducci">
 	<meta name="twitter:description" content="Photographe sur Bordeaux. Shooting - Retouches - Albums. Saisir un moment, une émotion, une lumière et les rendre immortels, voilà ce qui me fait vibrer.">
 	<meta name="twitter:image" content="./assets/images/camera.webp">
+	<meta name="geo.region" content="FR-NAQ">
+	<meta name="geo.placename" content="Bordeaux, France">
+	<!-- <meta name="geo.position" content=""> -->
 </head>
 
 <body>
@@ -42,7 +68,7 @@
         </nav>
     </header>
 
-	<section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -67,10 +93,10 @@
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Next</span>
 		</button>
-	</section>
+	</div>
 
     <section id="about">
-		<img class="picture left lazy" data-src="./assets/images/nina.webp" alt="Autoportrait de Nina, elle croise les bras devant des arbres, sourire léger, regard vers l'objectif">
+		<img class="picture left lazy" data-src="./assets/images/nina.webp" src="./assets/images/placeholder.webp" alt="Autoportrait de Nina, elle croise les bras devant des arbres, sourire léger, regard vers l'objectif">
 		<div id="about-me">
 			<h2 class="about-me__title">À propos de moi</h2>
 			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
@@ -82,15 +108,15 @@
     <section id="gallery">
         <h2 class="title">Portfolio</h2>
 		<div class="container py-3 gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="lazy gallery-item" data-src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Une foule lève les bras vers la scène, les projecteurs éclairent en orange, au plafond des construction métalliques en spirale">
-			<img data-gallery-tag="Entreprises" class="lazy gallery-item" data-src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Homme en costume qui croise les bras, un jet de lumière se projette sur son visage au léger sourire">
-			<img data-gallery-tag="Entreprises" class="lazy gallery-item" data-src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="au premier plan (flou) un femme qui rit, de dos, assise. Au second plan, la cible du portrait, une femme qui sourit vers elle, assise">
-			<img data-gallery-tag="Mariages" class="lazy gallery-item" data-src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="au centre de l'image, des mains tendues, celles d'un couple. A gauche une main sans bijou, à droite une main manucurée avec une bague. Fond flou sur des arbres.">
-			<img data-gallery-tag="Portrait" class="lazy gallery-item" data-src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="gros plan sur le visage d'un homme qui ferme les yeux, en plein soleil">
-			<img data-gallery-tag="Mariages" class="lazy gallery-item" data-src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="un couple en tenue de mariage (robe et costume) debout sur du gazon, ils se tiennent la main et rient en se regardant">
-			<img data-gallery-tag="Portrait" class="lazy gallery-item" data-src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait d'une jeune femme, l'objectif saisit l'image à travers un grillage, le ciel est bleu, elle regarde vers le bas, elle a la main près de ses cheveux car il y a du vent.">
-			<img data-gallery-tag="Concert" class="lazy gallery-item" data-src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="gros plan sur un artiste qui lève le bras et tiens son micro, en fond (flou) de la fumée bleu, blanche et rouge">
-			<img data-gallery-tag="Entreprises" class="lazy gallery-item" data-src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="une femme à son bureau qui rit, un rayon de soleil se pose sur ses cheveux, elle est assise devant un ordinateur portable et une tasse">
+			<img data-gallery-tag="Concert" class="lazy gallery-item" src="./assets/images/placeholder.webp" data-src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Une foule lève les bras vers la scène, les projecteurs éclairent en orange, au plafond des construction métalliques en spirale">
+			<img data-gallery-tag="Entreprises" class="lazy gallery-item" src="./assets/images/placeholder.webp" data-src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Homme en costume qui croise les bras, un jet de lumière se projette sur son visage au léger sourire">
+			<img data-gallery-tag="Entreprises" class="lazy gallery-item" src="./assets/images/placeholder.webp" data-src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="au premier plan (flou) un femme qui rit, de dos, assise. Au second plan, la cible du portrait, une femme qui sourit vers elle, assise">
+			<img data-gallery-tag="Mariages" class="lazy gallery-item" src="./assets/images/placeholder.webp" data-src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="au centre de l'image, des mains tendues, celles d'un couple. A gauche une main sans bijou, à droite une main manucurée avec une bague. Fond flou sur des arbres.">
+			<img data-gallery-tag="Portrait" class="lazy gallery-item" src="./assets/images/placeholder.webp" data-src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="gros plan sur le visage d'un homme qui ferme les yeux, en plein soleil">
+			<img data-gallery-tag="Mariages" class="lazy gallery-item" src="./assets/images/placeholder.webp" data-src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="un couple en tenue de mariage (robe et costume) debout sur du gazon, ils se tiennent la main et rient en se regardant">
+			<img data-gallery-tag="Portrait" class="lazy gallery-item" src="./assets/images/placeholder.webp" data-src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait d'une jeune femme, l'objectif saisit l'image à travers un grillage, le ciel est bleu, elle regarde vers le bas, elle a la main près de ses cheveux car il y a du vent.">
+			<img data-gallery-tag="Concert" class="lazy gallery-item" src="./assets/images/placeholder.webp" data-src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="gros plan sur un artiste qui lève le bras et tiens son micro, en fond (flou) de la fumée bleu, blanche et rouge">
+			<img data-gallery-tag="Entreprises" class="lazy gallery-item" src="./assets/images/placeholder.webp" data-src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="une femme à son bureau qui rit, un rayon de soleil se pose sur ses cheveux, elle est assise devant un ordinateur portable et une tasse">
 		</div>
 		<div class="quote">
 			<blockquote>
@@ -143,7 +169,7 @@
 					<input type="submit" value="Envoyer">
 				</form>
 			</div>
-			<img class="lazy picture right" data-src="./assets/images/camera.webp" alt="(sombre, reflets oranges) gros plan sur un vieil appareil photo Leica">
+			<img class="lazy picture right" src="./assets/images/placeholder.webp" data-src="./assets/images/camera.webp" alt="(sombre, reflets oranges) gros plan sur un vieil appareil photo Leica">
 		</div>
 	</footer>
 
