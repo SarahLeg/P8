@@ -58,7 +58,6 @@ body {
 	z-index: 0;
 }
 .picture {
-	/* flex: 1; */
 	margin: 0 20px;
 	z-index: 0;
 	width: 450px;
@@ -113,7 +112,7 @@ body {
 .gallery-item {
 	position: absolute;
 	width: 450px;
-	height: 450px;
+	height: 440px;
 	object-fit: cover;
 	padding: .5em;
 }
